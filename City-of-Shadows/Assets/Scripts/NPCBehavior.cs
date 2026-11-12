@@ -7,6 +7,8 @@ public class NPCBehavior : MonoBehaviour
     // Serialized fields for UI interaction.
     [SerializeField] private GameObject InteractPrompt;
     [SerializeField] private GameObject DialogBox;
+    [SerializeField] private GameObject BlackBarTop;
+    [SerializeField] private GameObject BlackBarBottom;
     [SerializeField] private TMP_Text DialogText;
     [SerializeField] private string[] DialogLines;
     [SerializeField] private float TypeSpeed = 0.0f;
@@ -20,8 +22,6 @@ public class NPCBehavior : MonoBehaviour
     // Checks each frame to see if the interaction is allowed (interaction prompt can be activated) and if 'E' is pressed to begin dialog or move to next line. 
     private void Update()
     {
-        
-
         if (canInteract && !isInteracting && UnityEngine.InputSystem.Keyboard.current.eKey.wasPressedThisFrame)
         {
             StartDialog();
@@ -43,6 +43,9 @@ public class NPCBehavior : MonoBehaviour
 
         DialogText.text = "";
         DialogBox.SetActive(true);
+
+        BlackBarTop.SetActive(true);
+        BlackBarBottom.SetActive(true);
 
         lineIndex = 0;
         StartCoroutine(WriteLine());
@@ -96,6 +99,8 @@ public class NPCBehavior : MonoBehaviour
         else
         {
             DialogBox.SetActive(false);
+            BlackBarTop.SetActive(false);
+            BlackBarBottom.SetActive(false);
             isInteracting = false;
             canInteract = playerInRange;
             InteractPrompt.SetActive(canInteract);
