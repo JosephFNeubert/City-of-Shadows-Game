@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97992436472d174439beddca5569489a, type: 3}
+  m_Name: Officer_Matthew
+  m_EditorClassIdentifier: Assembly-CSharp::DialogData
+  stateDialogs:
+  - gameState: 0
+    lines:
+    - Good day, sir.
+  - gameState: 1
+    lines:
+    - Morning sir.
+    - We got the victim wrapped up.
+    - Name is Ed Clovis, 44 years old, white male.
+    - He used to be a cop at another precinct.
+    - But he retired and works for Avon now.
+    - Or well.. worked.
+    - ...
+    - Sorry about that. That was inappropriate.
+    - I'm not the detective, but the other office workers told me that Ed had a falling out...
+    - with a former Avon employee...
+    - named Matt Grayson.
+    - He might be a good place to start.
+    - But I leave this investigation up to you now.

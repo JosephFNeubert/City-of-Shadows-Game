@@ -10375,7 +10375,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: RotationSpeed
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Name
@@ -19306,6 +19306,7 @@ MonoBehaviour:
   - He might be a good place to start. Maybe this is a case of business getting violent.
   - But I leave this investigation up to you now.
   TypeSpeed: 0.02
+  dialogData: {fileID: 11400000, guid: a346b03941fcfda48bf8377cd2fe1a77, type: 2}
 --- !u!65 &705843162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34029,7 +34030,7 @@ MonoBehaviour:
   - Oh, the Avon Offices?
   - Exit the building, go right, and turn left until you reach the first intersection. Can't miss it.
   - It's so close, so no car for you.
-  - The sargeant said that we have to keep the car in case we have to respond to something far away.
+  - The sergeant said that we have to keep the car in case we have to respond to something far away.
   - Apparently, some rich lady's house was broken into, and we couldn't respond...
   - because another detective was using the car.
   - The thief made out with about $200,000 in jewels.
@@ -34042,6 +34043,7 @@ MonoBehaviour:
   - Oh right, right, you got a murder to solve. Do your thing, don't let me hold you.
   - Go get 'em tiger!
   TypeSpeed: 0.02
+  dialogData: {fileID: 11400000, guid: 754fc619f16cc5749830fe7349686838, type: 2}
 --- !u!1 &1245148252
 GameObject:
   m_ObjectHideFlags: 0
@@ -60536,6 +60538,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100154, guid: 69e0bf832ba8212478b45616cc569f75, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2120910887}
+    - targetCorrespondingSourceObject: {fileID: 100154, guid: 69e0bf832ba8212478b45616cc569f75, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2120910889}
   m_SourcePrefab: {fileID: 100100000, guid: 69e0bf832ba8212478b45616cc569f75, type: 3}
 --- !u!1 &2120910884 stripped
 GameObject:
@@ -60586,7 +60591,7 @@ MonoBehaviour:
   BlackBarBottom: {fileID: 708202872}
   DialogText: {fileID: 2012928925}
   DialogLines:
-  - Hey son.
+  - Die son.
   - I hope this isn't another day in paradise for you.
   - Because I just received a call from a beat cop.
   - He received a report of an altercation at the Avon Offices.
@@ -60597,6 +60602,20 @@ MonoBehaviour:
   - Directions to Avon are with the gate guard.
   - Hop to it.
   TypeSpeed: 0.02
+  dialogData: {fileID: 11400000, guid: 69f147ce961080d4ea9e541127e2602c, type: 2}
+--- !u!114 &2120910889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120910884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f52831a61d756d240a7934e1bb5d4eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameStateChanger
+  maxStateChanges: 1
 --- !u!1001 &2121148124
 PrefabInstance:
   m_ObjectHideFlags: 0

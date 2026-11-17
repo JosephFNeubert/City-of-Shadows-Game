@@ -1,16 +1,23 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private static int gameState;
+    
+    private void Start()
     {
-        
+        gameState = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    internal static void incrementGameState()
     {
-        
+        gameState++;
+    }
+
+    internal static int getGameState()
+    {
+        return gameState;
     }
 }

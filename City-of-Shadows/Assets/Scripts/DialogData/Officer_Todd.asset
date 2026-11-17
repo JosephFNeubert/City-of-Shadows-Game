@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97992436472d174439beddca5569489a, type: 3}
+  m_Name: Officer_Todd
+  m_EditorClassIdentifier: Assembly-CSharp::DialogData
+  stateDialogs:
+  - gameState: 0
+    lines:
+    - Hey.
+  - gameState: 1
+    lines:
+    - Morning Detective!
+    - Was that a bit loud?
+    - Sorry, I'm trying caffeine supplements, and they got my heart rate going apeshit.
+    - Oh, the Avon Offices?
+    - Exit the building, go right, and turn left until you reach the first intersection. Can't miss it.
+    - It's so close, so no car for you.
+    - The sergeant said that we have to keep the car in case we have to respond to something far away.
+    - Apparently, some rich lady's house was broken into, and we couldn't respond...
+    - because another detective was using the car.
+    - The thief made out with about $200,000 in jewels.
+    - Granted, the detective was busy with a vehicular manslaughter.
+    - But it's not like it was solved.
+    - At least if we went to the rich lady's place, we'd actually be able to arrest someone.
+    - Or at least I hope.
+    - Oh! Did you hear that...
+    - Huh?
+    - Oh right, right, you got a murder to solve. Do your thing, don't let me hold you.
+    - Go get 'em tiger!

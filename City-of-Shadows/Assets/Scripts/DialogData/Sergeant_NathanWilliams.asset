@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97992436472d174439beddca5569489a, type: 3}
+  m_Name: Sergeant_NathanWilliams
+  m_EditorClassIdentifier: Assembly-CSharp::DialogData
+  stateDialogs:
+  - gameState: 0
+    lines:
+    - Hey son.
+    - I hope this isn't another day in paradise for you.
+    - Because I just received a call from a beat cop.
+    - He received a report of an altercation at the Avon Offices.
+    - Unfortunately, he arrived too late. This godforsaken city claims more victims.
+    - The poor bastard seems to be an ex-cop too.
+    - I hope I can rely on you to be professional as you solve this.
+    - Do please keep in mind the family might enjoy seeing the murderer brought to justice..
+    - Directions to Avon are with the gate guard.
+    - Hop to it.
+  - gameState: 1
+    lines:
+    - What are you still doing here?
+    - You waiting for a kiss on the cheek or something?
+    - Get to work.

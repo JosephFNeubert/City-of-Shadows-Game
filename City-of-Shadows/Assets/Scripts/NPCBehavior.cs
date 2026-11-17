@@ -13,11 +13,27 @@ public class NPCBehavior : MonoBehaviour
     [SerializeField] private string[] DialogLines;
     [SerializeField] private float TypeSpeed = 0.0f;
 
+    // Set dialog lines to a particular list of dialog depending on game state.
+    private string[] currentDialog;
+    [SerializeField] private DialogData dialogData;
+
     // Private helper variables.
     private int lineIndex = 0;
     private bool isInteracting = false;
     private bool canInteract = false;
     private bool playerInRange = false;
+
+    // Set dialog lines based on game state.
+    private bool SetDialogLines()
+    {
+        if (dialogData.GetLines(GameController.getGameState(), out currentDialog))
+        {
+            return true;
+        }
+
+        Debug.LogWarning("No dialog found. Current game state is " + GameController.getGameState());
+        return false;
+    }
 
     // Checks each frame to see if the interaction is allowed (interaction prompt can be activated) and if 'E' is pressed to begin dialog or move to next line. 
     private void Update()
@@ -36,6 +52,11 @@ public class NPCBehavior : MonoBehaviour
     // Starts dialog by activating the dialog box and starting the coroutine. 
     private void StartDialog()
     {
+        if (!SetDialogLines())
+        {
+            return;
+        }
+
         canInteract = false;
         isInteracting = true;
 
@@ -78,7 +99,7 @@ public class NPCBehavior : MonoBehaviour
     // Coroutine to write each character of each line by a certain type speed.
     private IEnumerator WriteLine()
     {
-        foreach (char c in DialogLines[lineIndex]) 
+        foreach (char c in currentDialog[lineIndex]) 
         {
             DialogText.text += c;
             yield return new WaitForSeconds(TypeSpeed);
@@ -90,7 +111,7 @@ public class NPCBehavior : MonoBehaviour
     {
         StopAllCoroutines();
 
-        if (lineIndex < DialogLines.Length - 1)
+        if (lineIndex < currentDialog.Length - 1)
         {
             DialogText.text = "";
             lineIndex++;
