@@ -17524,6 +17524,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
   m_PrefabInstance: {fileID: 644313121}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &645709023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6741746323168491683, guid: 47cdf29d05da82d49b7a919d9612fdab, type: 3}
+  m_PrefabInstance: {fileID: 2060508714}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &647496250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52912,6 +52917,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6252313649603453465, guid: 47cdf29d05da82d49b7a919d9612fdab, type: 3}
   m_PrefabInstance: {fileID: 2060508714}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1943465956
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645709023}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.8, y: 2, z: 5}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &1943633511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58526,7 +58552,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6741746323168491683, guid: 47cdf29d05da82d49b7a919d9612fdab, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1943465956}
   m_SourcePrefab: {fileID: 100100000, guid: 47cdf29d05da82d49b7a919d9612fdab, type: 3}
 --- !u!114 &2060813482
 MonoBehaviour:
@@ -60615,7 +60644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52831a61d756d240a7934e1bb5d4eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameStateChanger
-  maxStateChanges: 1
 --- !u!1001 &2121148124
 PrefabInstance:
   m_ObjectHideFlags: 0

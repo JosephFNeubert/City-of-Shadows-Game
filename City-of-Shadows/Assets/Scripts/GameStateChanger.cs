@@ -1,9 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameStateChanger : MonoBehaviour
 {
     private bool changeState = false;
-    public int maxStateChanges;
+    private bool hasChangedState = false;
     private float delay;
     private float timer;
 
@@ -25,12 +26,13 @@ public class GameStateChanger : MonoBehaviour
 
     private void Update()
     {
-        if (changeState && UnityEngine.InputSystem.Keyboard.current.qKey.wasPressedThisFrame && GameController.getGameState() <= maxStateChanges)
+        if (changeState && UnityEngine.InputSystem.Keyboard.current.eKey.wasPressedThisFrame && !hasChangedState)
         {
             timer += Time.deltaTime;
             if (timer > delay)
             {
                 GameController.incrementGameState();
+                hasChangedState = true;
             }
         }
     }
