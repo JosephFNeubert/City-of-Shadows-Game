@@ -25,6 +25,9 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/Main_Map.unity
     m_guid: 851d59467f61629459c644f33cdd8f7e
+  - m_enabled: 1
+    m_path: Assets/Scenes/Crime_Scene.unity
+    m_guid: dce91f5543e8e1f48a3ee079d43fefec
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
@@ -33,6 +36,8 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 9028182572569460737
       type: {class: WebGLPlatformSettings, ns: UnityEditor.WebGL, asm: UnityEditor.WebGL.Extensions}
       data:
